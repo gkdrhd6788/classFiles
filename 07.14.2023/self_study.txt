@@ -1,0 +1,3 @@
+sort( ) 함수
+	a.sort( )  가능
+	b=a.sort( )  불가
