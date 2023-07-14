@@ -1,2 +1,5 @@
 solution: 하위파일에 있는 .git 삭제
 원인: 하위 파일에 .git 이 있는 경우 발생
+
+참고 url
+https://velog.io/@nemo/git-changes-not-staged
