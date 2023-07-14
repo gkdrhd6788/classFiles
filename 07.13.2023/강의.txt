@@ -29,7 +29,8 @@ rm -rf .git/   - git 만든 거 삭제하기.
 git init    - 로컬 저장소 설정(초기화) , git 의 버전 관리를 시작할 디렉토리에서 진행. master가 떠야함.
 git add 파일명    - 1->2  (A표시) if git add .하면 현재 폴더에 있는 모든 걸 add
 git commit -m "설명"    -  2 ->3  (message의 m)
-git push -u 별칭(ex. origin) master 	- 3 ->4 (orgin별칭의 원격저장소에 로컬master브랜치를 push)
+git push -u 별칭(ex. origin) 
+master 	- 3 ->4 (orgin별칭의 원격저장소에 로컬master브랜치를 push)
 	두번째부터는 git push만 하면 됨
 git pull origin master (위와 동일)    (or clone-3이 없을 때 4를 복제하는것. git init도 불요) 	- 4 ->3
 	git clone https주소
@@ -41,6 +42,7 @@ git log --oneline  한줄로 보여줌(위에 있는게 최신)
 
 git remote add 원격저장소 별칭(ex.origin) 원격저장소 주소      - 3.에  4.주소 추가
 
+git remote       - 현재 프로젝트에 등록된 리모트 저장소
 git remote -v	-추가된 원격 저장소 목록 확인
 git remote rm 원격저장소이름     - 현재 로컬 저장소에 등록된 원격 저장소 삭제
 esc 
