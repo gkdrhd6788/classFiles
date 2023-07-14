@@ -1,3 +1,7 @@
+노강호 상무 
+-삼성전자 S/W 개발팀 (SSD 메모리) SW Architeture 
+- SCSA 1~4기 강사
+
 #자율주행
 -10년
 
@@ -14,5 +18,29 @@
 
 활용방안을 고민해야
 
-update해보자
 
+SW
+1. Programming Language 
+-일정 수준 이상의 절대적 시간필요
+-꾸준함
+-누구나 노력하면 일정 수준 가능
+-좋은 교육이 필요 for simple code, 일관성있는 코드(Coding Convention)
+-Copilot 프로그램으로 컨벤션 수정가능하지만 훈련이 필요
+-한가지언어를 확실히 master(다른 사람앞에서 자신있게 짤수있는 정도)해야
+ ( C++  or C 중 하나. 해외도 마찬가지). 그 다음에 다른 언어는 쓰기 쉬움.
+ 제품을 만드는데 속도가 느리면 치명적이어서 python이 쓰이기에 어려움.
+ data 분석엔 쓰인다.->python에 그치지 말고 C++배우기
+삼전에서 Rust 도입 시도 중
+
+2. Skill-Set
+코딩 알고리즘 "자료구조" 디자인패턴 소프트웨어택틱 라이브러리
++
+수학 통계 기술적글쓰기 HW Data Analtics Testing 인공지능assistant
+
+
+3. Architecturing
+SW의 종착역
+해외에서 연봉이 쎄다.
+
+QnA
+면접 -학부생 (태도,어떤 과목 수강? 지식) ,대학원(과목 지식 딥하게)
