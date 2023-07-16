@@ -1,12 +1,3 @@
-Markdown
-CLI (Command Line Interface)  '명령어'를 통해 사용자와 컴퓨터가 상호작용하는 방식
-GUI (Graphic User Interface) '그래픽'을 통해 ""
-TIL 
-- todat i learned (md파일을 github에 올리면 html형식으로 볼 수 있음)
-markdown으로 작성해서 git에 올리는 게 일반적임
-OS??
-kernel??
-shell??
 ---
 버전 관리 방법 (old)
 1. 파일명에 날짜, 시간 기록하기
