@@ -27,7 +27,7 @@ git pull origin master (위와 동일)    (or clone-3이 없을 때 4를 복제�
 git ignore
 git status	    - 2.의 상태를 확인
 git log	-commit 정보확인
-git log --oneline  한줄로 보여줌(위에 있는게 최신)
+git log --oneline  한 줄로 보여줌(위에 있는게 최신)
 	7자리 hash 값은 ID
 
 git remote add 원격저장소 별칭(ex.origin) 원격저장소 주소      - 3.에  4.주소 추가
