@@ -1,0 +1,7 @@
+solution: global 선언 (a값을 변경하는 것과 같이 "할당"을 해주려면 global선언이 필수적)
+
+원인:  새로운 지역변수의 선언이라 알아듣기에
+비교 :  global선언 없이 함수 내에서 전역변수를 사용할 경우 print(a) , if a == 1: 과 같이 조회하는 기능만 가능하다.
+
+참고 url
+https://velog.io/@hongsikcho/%ED%8C%8C%EC%9D%B4%EC%8D%AC-referenced-before-assignment%EC%97%90%EB%9F%AC-%EC%9D%B4%EC%9C%A0%EC%99%80-%ED%95%B4%EA%B2%B0
