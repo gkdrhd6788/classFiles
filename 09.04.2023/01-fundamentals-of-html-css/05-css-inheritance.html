@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      color: red;
+
+    border: 1px solid black;
+    }
+    li {
+      border: inherit
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="parent">
+    <li class="child">Hello</li>
+    <li class="child">Bye<span>ul의 자손,li의 자식</span></li>
+  </ul>
+  <p>이건 block 요소입니다.</p>
+  <a href="">이건 inline요소입니다.</a>
+  <span>나도 inline</span>
+</body>
+
+</html>
