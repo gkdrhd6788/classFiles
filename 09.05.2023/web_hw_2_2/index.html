@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .gray {
+      position: relative;
+      width: 350px;
+      height: 500px;
+      background-color: lightgray;
+    }
+    .edge {
+      position: relative;
+      top: 15px;
+      left:23px;
+      width:300px;
+      height:300px;
+      /* border: black 2px dotted; */
+    }
+    .photo {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width:inherit;
+      height:inherit;
+    }
+    .name {
+      position: absolute;
+      bottom:0px;
+      right:0px;
+      width: inherit;
+      height: 30px;
+      background-color: orange;
+      opacity: 0.8;
+      margin:0;
+      text-align: center;
+      font-weight: bold; 
+      padding-top: 10px;
+      z-index: 9999;
+    }
+    .description {
+      position:absolute;
+      width: 300px;
+      top:325px;
+      left: 25px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gray">
+    <div class="edge">
+      <img class="photo" src="profile.jpg" alt="Profile Image">
+      <p class="name">Name</p>
+    </div>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci unde officiis ad nostrum. Laboriosam mollitia similique provident fuga tenetur saepe sit, amet eaque neque eius quaerat expedita ea illum veniam.</p>
+  </div>
+</body>
+</html>
