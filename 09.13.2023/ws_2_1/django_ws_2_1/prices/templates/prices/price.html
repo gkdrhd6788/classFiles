@@ -6,12 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <hr>
-    <h2>it's me!</h2>
-    {% comment %} views.py에서 context에 써있는거 {% endcomment %}
-    이름: {{name}}   
-    나이: {{age}}
+    {% if total_price > 0 %}
+    <p>{{food}} {{num}}개의 가격은 {{total_price}}원 입니다.</p>
 
+    {% else %}
+    <p>{{food}}은/는 없어용</p>
+
+    {% endif %}
+    
 </body>
 </html>

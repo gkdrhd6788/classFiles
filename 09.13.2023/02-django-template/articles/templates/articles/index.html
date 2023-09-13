@@ -1,0 +1,14 @@
+{% extends "articles/base.html" %}
+
+{% block content %}
+<h1>안녕! {{name}} </h1>
+<hr>
+<a href="/articles/dinner/">dinner</a>
+<a href="/articles/throw/">Throw</a>
+<hr>
+<a href="{% url "articles:dinner" %}">dinner</a>
+<a href="{% url "articles:throw" %}">throw</a>
+{% comment %} <a href="{% url "greeting" 'oh'%}"> greeting</a> {% endcomment %}
+
+<a href="{% url "pages:index" %}">index</a>
+{% endblock content %}
