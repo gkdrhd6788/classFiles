@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>계산 결과</h1>
+    <p>{{fir_num}} + {{sec_num}} = {{fir_num|add:sec_num}}</p>
+    <p>{{fir_num}} * {{sec_num}} = {{multiple}}</p>
+    <p>{{fir_num}} - {{sec_num}} = {{minus}}</p>
+
+    {% if divided == "none" %}
+    <p>계산할 수 없습니다.</p>
+    {% else %}
+    <p>{{fir_num}} / {{sec_num}} = {{divided}}</p>
+    {% endif %}
+
+</body>
+</html>
