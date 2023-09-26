@@ -9,24 +9,31 @@ def index(request):
     }
     return render(request,'travels/index.html',context)
 
+def detail(request,travel_pk):
+    travel = Travels.objects.get(pk=travel_pk)
+    context ={
+        'travel': travel,
+    }
+    return render(request,'travels/detail.html',context)
 
-def new(request):
-    form = TravelsForm()
+# def new(request):
+#     form = TravelsForm()
+#     context={
+#         'form':form,
+#     }
+#     return render(request,'travels/create.html',context)
+
+def create(request):
+    if request.method=="POST":
+        form = TravelsForm(request.POST)
+        if form.is_valid():
+            a=form.save()
+            # print(a)
+            return redirect('travels:detail',a.pk)
+        
+    else:
+        form = TravelsForm()
     context={
         'form':form,
     }
     return render(request,'travels/create.html',context)
-
-def create(request):
-    form = TravelsForm(request.POST)
-    if form.is_valid():
-        print('------------------------------------------------')
-        
-        a = form.save()
-        print(a.pk)
-        return redirect('travels:index')
-    context = {
-        'form':form,
-    }
-    return render(request,'travels/create.html',context)
-    
