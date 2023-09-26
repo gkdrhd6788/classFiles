@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Index</h1>
+<a href="{% url "travels:new" %}">CREATE</a>
+{% for travel in travels %}
+<a href="">
+    <p>{{travels.pk}}</p>
+</a>
+
+
+
+{% endfor %}
+{% endblock content %}
+
+
