@@ -29,7 +29,7 @@ def detail(request,travel_pk):
 #     }
 #     return render(request,'travels/create.html',context)
 @require_http_methods(["GET","POST"])
-def create(r equest):
+def create(request):
     if request.method=="POST":
         form = TravelsForm(request.POST)
         if form.is_valid():
