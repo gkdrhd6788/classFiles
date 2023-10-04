@@ -20,9 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = (
-    'django-insecure-di35%ckf8n7f=q(od(7%%x!umw#b&nd++=cd=x*2wiagludh9x'
-)
+SECRET_KEY = 'django-insecure-6(#a!%(gma@)4))$=^#r5&31yo86xf4y%j6829owmi$2qpe=&v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -34,7 +32,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'articles',
-    'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -58,7 +55,7 @@ ROOT_URLCONF = 'crud.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ BASE_DIR / 'templates' , ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,17 +118,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [
-    BASE_DIR/'static',
-    
-]
-
-MEDIA_ROOT = BASE_DIR /'media'
-
-MEDIA_URL = 'media/'
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-

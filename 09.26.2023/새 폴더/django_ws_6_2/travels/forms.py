@@ -6,7 +6,7 @@ class TravelsForm(forms.ModelForm):
     location = forms.CharField(
         widget=forms.TextInput(
             attrs={
-                'placeholdeer':'Enter the location'
+                'placeholder':'Enter the location'
             }
         )
     )
