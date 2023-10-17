@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>#{{ hashtag.content }}</h1>
+<p>{{ hashtag.movie_set.count }}개의 게시글</p>
+<hr>
+<h3> #{{ hashtag.content }} (을)를 태그한 글   </h3>
+{% for movie in movies %}
+<p>{{ movie.title }}</p>
+<a href="{% url "movies:detail" movie.pk %}" class="btn btn-primary">상세보기</a>
+{% endfor %}
+
+{% endblock content %}
+
+
+

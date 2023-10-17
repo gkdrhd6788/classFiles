@@ -1,0 +1,68 @@
+[
+{
+    "model": "articles.comment",
+    "pk": 1,
+    "fields": {
+        "article": 1,
+        "user": 1,
+        "content": "advfsv",
+        "created_at": "2023-10-17T00:26:55.555Z",
+        "updated_at": "2023-10-17T00:26:55.555Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 2,
+    "fields": {
+        "article": 2,
+        "user": 1,
+        "content": "afdsvadf",
+        "created_at": "2023-10-17T00:27:00.026Z",
+        "updated_at": "2023-10-17T00:27:00.026Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 3,
+    "fields": {
+        "article": 2,
+        "user": 1,
+        "content": "advfaadvsf",
+        "created_at": "2023-10-17T00:27:10.074Z",
+        "updated_at": "2023-10-17T00:27:10.074Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 4,
+    "fields": {
+        "article": 1,
+        "user": 1,
+        "content": "avsdfvadfvs",
+        "created_at": "2023-10-17T00:27:15.258Z",
+        "updated_at": "2023-10-17T00:27:15.258Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 5,
+    "fields": {
+        "article": 3,
+        "user": 2,
+        "content": "adsfvasdfda",
+        "created_at": "2023-10-17T01:22:51.136Z",
+        "updated_at": "2023-10-17T01:22:51.136Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 6,
+    "fields": {
+        "article": 3,
+        "user": 2,
+        "content": "vasdfvfsd",
+        "created_at": "2023-10-17T01:22:53.552Z",
+        "updated_at": "2023-10-17T01:22:53.552Z"
+    }
+}
+]
