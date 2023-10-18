@@ -7,6 +7,8 @@ from django.views.decorators.http import (
 from django.contrib.auth.decorators import login_required
 from .models import Movie, Comment,Hashtag
 from .forms import MovieForm, CommentForm
+from django import template
+register = template.Library()
 
 
 @require_safe
@@ -132,3 +134,14 @@ def hashtag(request,hash_pk):
         "movies": movies,
     }
     return render(request,'movies/hashtags.html',context)
+
+
+
+@register.filter
+def make_link(movie):
+    content = movie.content + ' '
+    hashtags = movie.hashtags.all()
+    for hashtag in hashtags:
+        content = content.replace(hashtag.content + ' ', 
+                        f'<a href="/movies/{hashtag.pk}/hashtag/">{hashtag.content}</a> ')
+    return content
