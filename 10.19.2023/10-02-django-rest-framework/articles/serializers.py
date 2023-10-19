@@ -20,7 +20,7 @@ class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
         fields = '__all__'
-        # read_only_fields = ('article',) #위에서 read_only해서!
+        # read_only_fields = ('article',) #위에서 override해서!
 
 
 class ArticleSerializer(serializers.ModelSerializer):
