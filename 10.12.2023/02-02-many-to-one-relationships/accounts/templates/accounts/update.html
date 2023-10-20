@@ -12,5 +12,10 @@
     {{ form.as_p }}
     <input type="submit">
   </form>
+
+  <form action="accounts:delete" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="회원탈퇴">
+  </form>
 </body>
 </html>
