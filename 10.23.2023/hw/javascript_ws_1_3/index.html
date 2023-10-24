@@ -24,15 +24,15 @@
     const idGame = document.querySelector('ul>#game')
     ulTag.removeChild(idGame)
     
-    const liTags = document.querySelectorAll(`ul :nth-child(n)`)
-    liTags.forEach(liTag => {
-      liTag.classList.toggle('list-group-item')
-    })
-    // var step;
-    // for (step=1;step < 5;step++){
-      //   const eachLi = document.querySelector(`ul :nth-child(${step})`)
-      //   eachLi.classList.add('list-group-item')
-      // }
+    // const liTags = document.querySelectorAll(`ul :nth-child(n)`)
+    // liTags.forEach(liTag => {
+    //   liTag.classList.toggle('list-group-item')
+    // })
+    var step;
+    for (step=1;step < 5;step++){
+        const eachLi = document.querySelector(`ul :nth-child(${step})`)
+        eachLi.classList.add('list-group-item')
+      }
       const secLi = document.querySelector('li:nth-child(2)')
       secLi.classList.add('active')
       secLi.setAttribute('aria-current','true')
