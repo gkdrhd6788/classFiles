@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app"> 
+    <h1>{{ message }}</h1>
+  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref } = Vue //import하는 것처럼
+    const app = createApp({   //하나의 객체를 인자로 받음
+      setup(){ //setup메서드(단축형으로)
+        //여기서 원하는 변수 만들면 됨(ref로 wrapping하면 반응형)
+        const message = ref('hello vue!!')
+        return {
+          message //여기서 리턴을 해줘야 mount된 곳에서 쓸 수 있음(like context)
+        } //setup메서드는 객체 리턴(여러개 리턴하기 때문)
+      }
+    })
+    app.mount('#app')
+  </script>
+</body>
+
+</html>

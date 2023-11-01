@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <p>반응성 변수:{{ reactiveValue }} </p>
+    <p>일반 변수: {{ normalValue }} </p>
+    <button @click="increment">값 업데이트</button>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+        const {createApp,ref} = Vue
+    const app = createApp({
+      setup() {
+        const reactiveValue = ref(0)
+        let normalValue = 0
+        const increment = function(){
+          reactiveValue.value++
+          normalValue++
+          console.log(normalValue)
+        } //count는 ref 객체이기때문에 .value로 접근,객체이기에 재할당이 아님(여기서const문제 :값만 바뀌었으므로 주소는 변함이 없음)
+        return {
+          reactiveValue,
+          normalValue,
+          increment
+        }
+        }
+    })
+    app.mount('#app')
+  </script>
+</body>
+
+</html>
