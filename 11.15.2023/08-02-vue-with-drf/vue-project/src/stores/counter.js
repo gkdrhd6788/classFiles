@@ -6,6 +6,13 @@ export const useCounterStore = defineStore('counter', () => {
   const articles = ref([])
   const API_URL = 'http://127.0.0.1:8000'
   const token = ref(null)
+  const isLogin = computed(()=>{
+    if (token.value === null) {
+      return false
+    } else {
+      return true
+    }
+  })
 
   // DRF에 article 조회 요청을 보내는 action
   const getArticles = function () {
@@ -63,5 +70,5 @@ export const useCounterStore = defineStore('counter', () => {
         console.log(err)
       })
   }
-  return { articles, API_URL, getArticles, signUp ,logIn, token }
+  return { articles, API_URL, getArticles, signUp ,logIn, token, isLogin }
 }, { persist: true })

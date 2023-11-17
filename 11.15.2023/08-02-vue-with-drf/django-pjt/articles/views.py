@@ -13,6 +13,8 @@ from .models import Article
 
 
 @api_view(['GET', 'POST'])
+# view함수 별 권한 설정
+# 권산 정책 여러가기 중 하나(IsAuthenticated,IsAdminUser...)
 @permission_classes([IsAuthenticated])
 def article_list(request):
     if request.method == 'GET':

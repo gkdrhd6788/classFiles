@@ -60,6 +60,7 @@ REST_FRAMEWORK = {
     ],
     # permission
     'DEFAULT_PERMISSION_CLASSES': [
+        # 무제한 액세스(권한) 기본값이지만 명시하는 게 좋음
         'rest_framework.permissions.AllowAny',
     ],
 }

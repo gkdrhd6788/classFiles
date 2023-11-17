@@ -36,4 +36,20 @@ const router = createRouter({
   ]
 })
 
+import { useCounterStore } from '@/stores/counter'
+
+router.beforeEach((to,from)=>{
+  const store = useCounterStore()
+  if (to.name === 'ArticleView' && !store.isLogin) {
+    window.alert('로그인이 필요합니다.')
+    return { name : 'LogInView'}
+  }
+  if ((to.name === 'SignUpView' || to.name=='LogInView') && (store.isLogin)){
+    window.alert('이미 로그인 했습니다.')
+    return { name: 'ArticleView'}
+  }
+})
+
 export default router
+
+// 로그아웃 버튼, 로그인 전후에 따라 네브바 바뀌는 거(강사님이 깃에 올려주심)
